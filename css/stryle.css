@@ -1,0 +1,390 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.erro{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/espaço.png) center no-repeat;
+    background-size: cover;
+    position: absolute;
+    overflow: hidden;
+}
+
+.erro img{
+    position: absolute;
+}
+
+.astronalta{
+    top: 40px;
+    right: 10px;
+    width: 40px;
+    animation: astronalta-move 20s infinite;
+}
+
+.lua{
+    bottom: -50px;
+    right: -50px;
+    width: 150px;
+    animation: lua-move 7s infinite;
+}
+
+.nave{
+    top:60px;
+    left: 120px;
+    width: 50px;
+    transform: scale(0);
+    animation: nave-move 15s 3s infinite;
+}
+.estrela{
+width: 100%;
+height: 100%;
+object-fit: cover;
+animation: estrela-move 800s linear infinite;
+
+}
+.cometa{
+    top: 150px;
+    left: -250px;
+    width: 150px;
+    animation: cometa-move 20s 5s infinite;
+}
+.meteoro{top: 150px;
+    left: -250px;
+    width: 150px;
+    animation: meteoro-move 20s 5s infinite;
+}
+
+.engrenagem{
+    top: 40px;
+    right: 10px;
+    width: 40px;
+    animation: engrenagem-move 20s infinite;}
+
+.ferramenta{
+    top: 40px;
+    right: 10px;
+    width: 40px;
+    animation: ferramenta-move 20s infinite;}
+
+.martelo{
+    top: 40px;
+    right: 10px;
+    width: 40px;
+    animation: martelo-move 20s infinite;}
+
+@keyframes astronalta-move{
+    to{
+        transform: translate(-300px, -150px) rotate(-360deg);
+    }
+}
+
+@keyframes lua-move{
+    50% {
+        transform: translateY(25px);}
+}
+
+@keyframes nave-move{
+    25%{
+        transform: scale(.5) 
+        translate(-170px, 25px);
+    }
+    50%, 100% {
+        transform: scale(4);
+        translate: (250px, 300px);
+    }
+}
+
+@keyframes estrela-move{
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes cometa-move{
+    to{
+        transform: translate(500px, -150px);
+        filter: hue-rotate(360deg)
+    }
+}
+@keyframes meteoro-move{
+    to{
+        transform: translate(-300px, -150px) rotate(-360deg);
+    }
+}
+@keyframes engrenagem-move{
+    to{
+        transform: translate(-300px, -150px) rotate(-360deg);
+    }
+}
+@keyframes ferramenta-move{
+    to{
+        transform: translate(-300px, -150px) rotate(-360deg);
+    }
+}
+@keyframes martelo-move{
+    to{
+        transform: translate(-300px, -150px) rotate(-360deg);
+    }
+}
+
+#texto{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Bangers';
+    font-size: 2em ;
+    line-height: 100px;
+    z-index: 1;
+    height: 850px;
+  
+
+}
+
+
+
+h1 span{
+    position: relative;
+    top: 20px;
+    left: 5px;
+    display: inline-block;
+    color: rgb(0, 0, 0);    
+    text-shadow: 
+    0 1px 0 rgb(241, 241, 241),
+    0 2px 0 #ccc,
+    0 3px 0 #ccc,
+    0 4px 0 #ccc,
+    0 5px 0 #ccc,
+    0 5px 0 transparent,
+    0 6px 0 transparent,
+    0 7px 0 transparent,
+    0 8px 0 transparent,
+    0 10px 10px rgba(0, 0, 0, 4);
+    animation: bounce .9s ease infinite alternate;
+
+}
+
+h1 span:nth-child(2){animation-delay: .1s;}
+h1 span:nth-child(3){animation-delay: .2s;}
+h1 span:nth-child(4){animation-delay: .3s;}
+h1 span:nth-child(5){animation-delay: .4s;}
+h1 span:nth-child(6){animation-delay: .5s;}
+h1 span:nth-child(7){animation-delay: .6s;}
+h1 span:nth-child(8){animation-delay: .7s;}
+h1 span:nth-child(9){animation-delay: .8s;}
+h1 span:nth-child(10){animation-delay: .9s;}
+
+
+@keyframes bounce {
+    100%{
+        top: -20px;
+    }
+}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: url(../img/espaço.png) center no-repeat;
+    
+}
+
+.erro{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    overflow: hidden;
+}
+
+.erro img{
+    position: absolute;
+}
+
+.astronalta{
+    top: 22%;
+    right: -11%;
+    width: 10%;
+    animation: astronalta-move 20s 1s infinite ;
+}
+
+.lua{
+    bottom: -20%;
+    right: -10%;
+    width: 35%;
+    animation: lua-move 7s infinite;
+}
+
+.nave{
+    top:60px;
+    right: 120px;
+    width: 25px;
+    transform: scale(0);
+    animation: nave-move 50s infinite;
+}
+.estrela{
+width: 100%;
+height: 100%;
+object-fit: cover;
+animation: estrela-move 800s linear infinite;
+
+}
+.cometa{
+    top: 450px;
+    left: -250px;
+    width: 250px;
+    animation: cometa-move 19s 1s infinite;
+}
+.meteoro{
+    top: 150px;
+    right: -350px;
+    width: 150px;
+    animation: meteoro-move 19s 6s infinite;
+}
+
+.engrenagem{
+    top: 560px;
+    right: 2px;
+    width: 40px;
+    animation: engrenagem-move 30s infinite reverse;}
+
+.ferramenta{
+    top: 460px;
+    left: 2px;
+    width: 40px;
+    animation: ferramenta-move 30s infinite reverse;}
+
+.martelo{
+    top: 260px;
+    right: 2px;
+    width: 40px;
+    animation: martelo-move 30s infinite reverse;}
+
+@keyframes astronalta-move{
+    to{
+        transform: translate(-1200px, -600px) rotate(-660deg);
+    }
+}
+
+@keyframes lua-move{
+    50% {
+        transform: translateY(3%);}
+}
+
+@keyframes nave-move{
+    25%{
+        transform: scale(3) 
+        translate(-900px, 250px);
+    }
+    50% {
+        transform: scale(4);
+        translate: (150px, 300px);
+    }
+}
+
+@keyframes estrela-move{
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes cometa-move{
+    to{
+        transform: translate(5500px, -450px);
+        filter: hue-rotate(360deg)
+    }
+}
+@keyframes meteoro-move{
+    to{
+        transform: translate(-6000px, 350px);
+        filter: hue-rotate(360deg)
+    }
+}
+@keyframes engrenagem-move{
+    to{
+        transform: translate(-2000px, -350px) rotate(-660deg);
+    }
+}
+@keyframes ferramenta-move{
+    to{
+        transform: translate(1000px, 350px) rotate(-560deg);
+    }
+}
+@keyframes martelo-move{
+    to{
+        transform: translate(-2000px, 250px) rotate(-360deg);
+    }
+}
+
+#texto{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Bangers';
+    font-size: 1.3em ;
+    line-height: 100px;
+    z-index: 1;
+    height: 850px;
+  
+
+}
+
+
+
+h1 span{
+    position: relative;
+    top: 20px;
+    left: 5px;
+    display: inline-block;
+    color: rgb(0, 0, 0);    
+    text-shadow: 
+    0 1px 0 rgb(241, 241, 241),
+    0 2px 0 #ccc,
+    0 3px 0 #ccc,
+    0 4px 0 #ccc,
+    0 5px 0 #ccc,
+    0 5px 0 transparent,
+    0 6px 0 transparent,
+    0 7px 0 transparent,
+    0 8px 0 transparent,
+    0 10px 10px rgba(0, 0, 0, 4);
+    animation: bounce .9s ease infinite alternate;
+
+}
+
+h1 span:nth-child(2){animation-delay: .1s;}
+h1 span:nth-child(3){animation-delay: .2s;}
+h1 span:nth-child(4){animation-delay: .3s;}
+h1 span:nth-child(5){animation-delay: .4s;}
+h1 span:nth-child(6){animation-delay: .5s;}
+h1 span:nth-child(7){animation-delay: .6s;}
+h1 span:nth-child(8){animation-delay: .7s;}
+h1 span:nth-child(9){animation-delay: .8s;}
+h1 span:nth-child(10){animation-delay: .9s;}
+
+
+@keyframes bounce {
+    100%{
+        top: -20px;
+    }
+}
+
+@media (max-width: 974px) {
+.lua {
+    bottom: -15%;
+    right: 30%;
+    width: 80%;
+    display: none !important;
+}
+}
